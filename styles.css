@@ -1,6 +1,6 @@
 body {
     font-family: 'Arial', sans-serif;
-    background: url('https://wallpapers.com/images/featured/romantic-background-lj5ivk6bb762bl77.webpg') no-repeat center center fixed;
+    background: url('https://wallpapers.com/images/featured/romantic-background-lj5ivk6bb762bl77.webpg') no-repeat center center;
     background-size: cover;
     color: #333;
     margin: 0;
@@ -10,13 +10,13 @@ body {
 header {
     text-align: center;
     padding: 20px;
-    background: rgba(255, 192, 203, 0.8);
+    background: rgba(255, 255, 255, 0.8);
 }
 
 header h1 {
     margin: 0;
     font-size: 2.5em;
-    color: #FF69B4;
+    color: #6A5ACD; /* Slate Blue */
 }
 
 nav ul {
@@ -31,7 +31,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #FF1493;
+    color: #FF8C00; /* Dark Orange */
     font-weight: bold;
 }
 
@@ -42,22 +42,69 @@ nav ul li a:hover {
 main {
     text-align: center;
     padding: 50px 20px;
+    background: rgba(255, 250, 250, 0.8); /* Snow */
 }
 
 .welcome h2 {
     font-size: 2em;
-    color: #FF69B4;
+    color: #FF69B4; /* Hot Pink */
 }
 
 blockquote {
     font-style: italic;
-    color: #FF1493;
+    color: #20B2AA; /* Light Sea Green */
     margin: 20px 0;
 }
 
 footer {
     text-align: center;
     padding: 10px;
-    background: rgba(255, 192, 203, 0.8);
-    color: #FF69B4;
+    background: rgba(255, 255, 255, 0.8);
+    color: #6A5ACD; /* Slate Blue */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    .welcome h2 {
+        font-size: 1.5em;
+    }
+
+    blockquote {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        font-size: 1em;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    .welcome h2 {
+        font-size: 1.2em;
+    }
+
+    blockquote {
+        font-size: 0.8em;
+    }
 }
